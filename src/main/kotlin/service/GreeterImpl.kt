@@ -8,7 +8,7 @@ class GreeterImpl : GreeterGrpcKt.GreeterCoroutineImplBase() {
 
     override suspend fun sayHello(request: HelloRequest): HelloReply {
         return HelloReply.newBuilder()
-            .setMessage("Hello GRPC!")
+            .setMessage("Hello ${request.name}!")
             .build()
     }
 }
