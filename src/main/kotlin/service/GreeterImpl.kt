@@ -7,6 +7,7 @@ import com.example.grpc.HelloRequest
 class GreeterImpl : GreeterGrpcKt.GreeterCoroutineImplBase() {
 
     override suspend fun sayHello(request: HelloRequest): HelloReply {
+        println("Request --> $request")
         return HelloReply.newBuilder()
             .setMessage("Hello ${request.name}!")
             .build()

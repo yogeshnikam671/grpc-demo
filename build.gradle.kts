@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
     implementation("io.grpc:grpc-kotlin-stub:1.3.0")
+    implementation("io.grpc:grpc-services:1.57.0")
     implementation("io.grpc:grpc-protobuf:1.57.0")
     implementation("io.grpc:grpc-netty-shaded:1.57.0")
     implementation("com.google.protobuf:protobuf-kotlin:3.23.4")
